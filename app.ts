@@ -1,4 +1,4 @@
-const  express = require('express');
+import express from 'express';
 
 const app = express();
 const PORT = 8080;
@@ -11,6 +11,6 @@ app.get("/hoidanit", (req, res) => {
   res.send("Hello HoiDanit!");
 });
 
-app.listen(8080, () => {
-    console.log(`My app is running on port: ${PORT}`);
+app.listen(PORT, () => {
+  console.log(`My app is running on port: ${PORT}`);
 })   

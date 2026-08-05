@@ -12,6 +12,9 @@ app.set("views", "./src/views");
 import webRoutes from './routes/web';
 webRoutes(app);
 
+// config static files
+app.use(express.static('public'));
+
 app.listen(PORT, () => {
   console.log(`My app is running on port: ${PORT}`);
 })   
